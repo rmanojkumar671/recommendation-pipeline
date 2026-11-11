@@ -1,0 +1,21 @@
+item_id,title,release_date,imdb_url,genre_unknown,genre_Action,genre_Adventure,genre_Animation,genre_Children,genre_Comedy,genre_Crime,genre_Documentary,genre_Drama,genre_Fantasy,genre_Film-Noir,genre_Horror,genre_Musical,genre_Mystery,genre_Romance,genre_Sci-Fi,genre_Thriller,genre_War,genre_Western,title_year,release_date_imputed,release_year,genres,n_genres,title_clean
+1,Toy Story (1995),1995-01-01,http://us.imdb.com/M/title-exact?Toy%20Story%20(1995),0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1995.0,False,1995,Animation|Children|Comedy,3,Toy Story
+2,GoldenEye (1995),1995-01-01,http://us.imdb.com/M/title-exact?GoldenEye%20(1995),0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1995.0,False,1995,Action|Adventure|Thriller,3,GoldenEye
+3,Four Rooms (1995),1995-01-01,http://us.imdb.com/M/title-exact?Four%20Rooms%20(1995),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1995.0,False,1995,Thriller,1,Four Rooms
+4,Get Shorty (1995),1995-01-01,http://us.imdb.com/M/title-exact?Get%20Shorty%20(1995),0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1995.0,False,1995,Action|Comedy|Drama,3,Get Shorty
+5,Copycat (1995),1995-01-01,http://us.imdb.com/M/title-exact?Copycat%20(1995),0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,1995.0,False,1995,Crime|Drama|Thriller,3,Copycat
+6,Shanghai Triad (Yao a yao yao dao waipo qiao) (1995),1995-01-01,http://us.imdb.com/Title?Yao+a+yao+yao+dao+waipo+qiao+(1995),0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1995.0,False,1995,Drama,1,Shanghai Triad (Yao a yao yao dao waipo qiao)
+7,Twelve Monkeys (1995),1995-01-01,http://us.imdb.com/M/title-exact?Twelve%20Monkeys%20(1995),0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1995.0,False,1995,Drama|Sci-Fi,2,Twelve Monkeys
+8,Babe (1995),1995-01-01,http://us.imdb.com/M/title-exact?Babe%20(1995),0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1995.0,False,1995,Children|Comedy|Drama,3,Babe
+9,Dead Man Walking (1995),1995-01-01,http://us.imdb.com/M/title-exact?Dead%20Man%20Walking%20(1995),0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1995.0,False,1995,Drama,1,Dead Man Walking
+10,Richard III (1995),1996-01-22,http://us.imdb.com/M/title-exact?Richard%20III%20(1995),0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1995.0,False,1996,Drama|War,2,Richard III
+11,Seven (Se7en) (1995),1995-01-01,http://us.imdb.com/M/title-exact?Se7en%20(1995),0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1995.0,False,1995,Crime|Thriller,2,Seven (Se7en)
+12,"Usual Suspects, The (1995)",1995-08-14,"http://us.imdb.com/M/title-exact?Usual%20Suspects,%20The%20(1995)",0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1995.0,False,1995,Crime|Thriller,2,"Usual Suspects, The"
+13,Mighty Aphrodite (1995),1995-10-30,http://us.imdb.com/M/title-exact?Mighty%20Aphrodite%20(1995),0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1995.0,False,1995,Comedy,1,Mighty Aphrodite
+14,"Postino, Il (1994)",1994-01-01,"http://us.imdb.com/M/title-exact?Postino,%20Il%20(1994)",0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1994.0,False,1994,Drama|Romance,2,"Postino, Il"
+15,Mr. Holland's Opus (1995),1996-01-29,http://us.imdb.com/M/title-exact?Mr.%20Holland's%20Opus%20(1995),0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1995.0,False,1996,Drama,1,Mr. Holland's Opus
+16,French Twist (Gazon maudit) (1995),1995-01-01,http://us.imdb.com/M/title-exact?Gazon%20maudit%20(1995),0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1995.0,False,1995,Comedy|Romance,2,French Twist (Gazon maudit)
+17,From Dusk Till Dawn (1996),1996-02-05,http://us.imdb.com/M/title-exact?From%20Dusk%20Till%20Dawn%20(1996),0,1,0,0,0,1,1,0,0,0,0,1,0,0,0,0,1,0,0,1996.0,False,1996,Action|Comedy|Crime|Horror|Thriller,5,From Dusk Till Dawn
+18,"White Balloon, The (1995)",1995-01-01,http://us.imdb.com/M/title-exact?Badkonake%20Sefid%20(1995),0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1995.0,False,1995,Drama,1,"White Balloon, The"
+19,Antonia's Line (1995),1995-01-01,http://us.imdb.com/M/title-exact?Antonia%20(1995),0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1995.0,False,1995,Drama,1,Antonia's Line
+20,Angels and Insects (1995),1995-01-01,http://us.imdb.com/M/title-exact?Angels%20and%20Insects%20(1995),0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1995.0,False,1995,Drama|Romance,2,Angels and Insects

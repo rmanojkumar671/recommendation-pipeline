@@ -1,0 +1,28 @@
+{
+  "stage": "ingestion",
+  "run_at_utc": "2026-11-10T13:36:17.605381+00:00",
+  "dataset": "movielens-100k",
+  "source": "https://raw.githubusercontent.com/jessanrendell/movielens/master/ml-100k",
+  "source_checksums": {
+    "u.data": "06416e597f82b7342361e41163890c81036900f418ad91315590814211dca490",
+    "u.item": "553841ebc7de3a0fd0d6b62a204ea30c1e651aacfb2814c7a6584ac52f2c5701",
+    "u.user": "f120e114da2e8cf314fd28f99417c94ae9ddf1cb6db8ce0e4b5995d40e90e62c",
+    "u.genre": "9757e0d3e6b298159a80dd48eaf938114690e911e39af97a76949ef1663610bb",
+    "u.occupation": "cd5fbec9afe345d993a62fc7817df1a4a9079c4feb267b3118763b8fd942137d"
+  },
+  "noise_injected": true,
+  "outputs": {
+    "users.csv": {
+      "rows": 953,
+      "sha256": "b5088c6f14bcc1272cf63587dca726d15b3d640695127176b1be8c9e1b16d48b"
+    },
+    "items.csv": {
+      "rows": 1682,
+      "sha256": "6b9fa312d301a8c93cfea1beab0a27c80b6da167702e989c0890c8baecf975d0"
+    },
+    "interactions.csv": {
+      "rows": 100410,
+      "sha256": "38373ff72cd4564fb1dd5c701bcbb6e46a34fe4256808e764d88d66fbae8d82b"
+    }
+  }
+}

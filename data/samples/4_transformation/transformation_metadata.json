@@ -1,0 +1,11 @@
+{
+  "matrix_shape": [
+    943,
+    1682
+  ],
+  "nnz": 80001,
+  "density_pct": 5.044,
+  "users_summarised": 751,
+  "items_summarised": 1682,
+  "items_never_rated_in_train": 66
+}

@@ -1,0 +1,21 @@
+{
+  "split": "global_time",
+  "cutoff_timestamp": 889237269,
+  "cutoff_datetime_utc": "1998-03-07 02:21:09+00:00",
+  "train_rows": 80001,
+  "test_rows": 19999,
+  "train_period": [
+    "1997-09-20 03:05:10+00:00",
+    "1998-03-07 02:21:09+00:00"
+  ],
+  "test_period": [
+    "1998-03-07 02:21:37+00:00",
+    "1998-04-22 23:10:38+00:00"
+  ],
+  "train_users": 751,
+  "test_users": 303,
+  "test_users_cold_start": 192,
+  "test_rows_warm": 2862,
+  "test_rows_cold_user_or_item": 17137,
+  "items_with_imputed_release_date": 1
+}

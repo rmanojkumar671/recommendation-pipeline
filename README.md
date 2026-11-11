@@ -120,7 +120,8 @@ recommendation-pipeline/
 │   ├── raw/            downloaded + ingested CSVs (git-ignored, re-created on run)
 │   ├── processed/      validated / cleaned / split / derived datasets (parquet)
 │   ├── features/       materialised feature tables + feature_metadata.json
-│   └── errors/         quarantined records with the rules they failed
+│   ├── errors/         quarantined records with the rules they failed
+│   └── samples/        first 20 rows of every output table + stage metadata (committed for inspection)
 ├── docs/               architecture.png (+ script that draws it)
 ├── models/             one folder per model: model.pkl (git-ignored) + model_info.json
 ├── reports/            validation report, feature catalog, model comparison, figures, final report, run logs
@@ -143,3 +144,4 @@ recommendation-pipeline/
 - Source files are checksum-verified. `ingestion_manifest.json` records the checksums of every output, and the feature set carries a version hash.
 - Every MLflow run records the model params, the split cutoff, the feature-set version and the data size.
 - A second run gives identical data, features and metrics.
+- The full data is not committed (MovieLens licence; derived files are regenerated). `data/samples/` holds the first 20 rows of every output table so the results of each stage can be inspected without running the pipeline (`python -m src.utils.export_samples` refreshes them).

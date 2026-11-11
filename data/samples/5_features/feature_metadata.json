@@ -1,0 +1,27 @@
+{
+  "feature_set_version": "19a6bee73fbf",
+  "materialized_at_utc": "2026-11-10T13:36:24.409002+00:00",
+  "reference_time": "1998-03-07 02:21:09+00:00",
+  "params": {
+    "bayesian_prior_count": 20,
+    "positive_threshold": 4,
+    "recency_half_life_days": 30
+  },
+  "tables": {
+    "user_features": {
+      "rows": 943,
+      "columns": 32,
+      "null_pct": 16.543
+    },
+    "item_features": {
+      "rows": 1682,
+      "columns": 34,
+      "null_pct": 0.462
+    },
+    "interaction_features": {
+      "rows": 80001,
+      "columns": 10,
+      "null_pct": 0.0
+    }
+  }
+}
