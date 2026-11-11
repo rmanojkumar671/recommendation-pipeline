@@ -1,0 +1,8 @@
+# Apache Airflow (tested with 3.4.0 on Python 3.13; the DAG also works on Airflow 2.x).
+# Install with the official constraints file for your Python version, e.g.:
+#   AIRFLOW_VERSION=3.4.0
+#   PYTHON_VERSION="$(python -c 'import sys; print(f"{sys.version_info.major}.{sys.version_info.minor}")')"
+#   pip install "apache-airflow==${AIRFLOW_VERSION}" \
+#     --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt"
+#   pip install -r requirements.txt
+apache-airflow>=2.9

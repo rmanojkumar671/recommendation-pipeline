@@ -1,0 +1,87 @@
+# ------------------------------------------------------------------
+# SENSITIVITY-ANALYSIS config: identical to config.yaml except the split strategy
+# and output folders. Run with: python run_pipeline.py --config configs/config_per_user_split.yaml
+# Central configuration for the recommendation pipeline.
+# Every stage reads from this file, so a run is fully described by
+# (code version + this file + random seed).
+# ------------------------------------------------------------------
+project_name: movielens-recsys
+seed: 42
+
+paths:
+  raw: data/raw
+  processed: data/processed_per_user
+  features: data/features_per_user
+  errors: data/errors
+  models: models/per_user_split
+  reports: reports/per_user_split
+  logs: logs
+
+ingestion:
+  dataset: movielens-100k
+  # Official GroupLens archive (tried first) and a GitHub mirror used as a fallback.
+  official_zip_url: https://files.grouplens.org/datasets/movielens/ml-100k.zip
+  mirror_base_url: https://raw.githubusercontent.com/jessanrendell/movielens/master/ml-100k
+  files: [u.data, u.item, u.user, u.genre, u.occupation]
+  # SHA-256 of the official files; downloads that don't match are rejected.
+  checksums:
+    u.data: 06416e597f82b7342361e41163890c81036900f418ad91315590814211dca490
+    u.item: 553841ebc7de3a0fd0d6b62a204ea30c1e651aacfb2814c7a6584ac52f2c5701
+  # MovieLens is already very clean. To prove the validation layer works,
+  # a small, seeded and fully documented set of corrupted records is appended
+  # to the raw data. Set to false to ingest the pristine dataset.
+  inject_noise: true
+  noise:
+    duplicate_interactions: 150     # exact duplicate rows
+    repeat_interactions: 100        # same user-item, later timestamp (re-rating)
+    missing_values: 40              # null rating / user_id / timestamp
+    invalid_ratings: 40             # ratings outside 1..5 (0, 6, 7, -1, 3.5)
+    invalid_timestamps: 30          # negative or in the future
+    orphan_interactions: 30         # user_id / item_id not present in master data
+    bad_type_values: 20             # non-numeric strings in numeric columns
+    bad_users: 10                   # users with invalid age / gender / duplicate id
+
+validation:
+  rating_min: 1
+  rating_max: 5
+  timestamp_min: "1995-01-01"       # MovieLens site launched 1997; anything before 1995 is impossible
+  timestamp_max: "now"
+  age_min: 5
+  age_max: 100
+  allowed_genders: [M, F]
+
+preparation:
+  # global_time  : one cutoff timestamp for everyone - strictest, no future leakage (default)
+  # per_user_time: each user's most recent 20% of ratings go to test - every user is "warm"
+  split_strategy: per_user_time
+  test_fraction: 0.2                # most recent 20% of interactions (by time) form the test set
+  dedupe_strategy: keep_latest      # for repeated user-item interactions
+
+features:
+  bayesian_prior_count: 20          # m in the Bayesian (damped) average
+  positive_threshold: 4             # rating >= 4 is treated as a positive interaction
+  recency_half_life_days: 30
+
+training:
+  popularity:
+    score: bayesian_avg_x_log_count # how the baseline ranks items
+    min_ratings: 10
+  item_knn:
+    n_neighbors: 50
+    shrinkage: 10                   # shrinks similarities supported by few co-ratings
+    min_rating: 1
+  matrix_factorization:
+    n_factors: 40
+    n_epochs: 30
+    learning_rate: 0.007
+    reg: 0.06
+    init_std: 0.1
+
+evaluation:
+  k_values: [5, 10]
+  primary_k: 10
+  relevance_threshold: 4            # a test rating >= 4 counts as a relevant item
+
+mlflow:
+  tracking_uri: sqlite:///mlflow.db
+  experiment_name: movielens-recsys-per-user-split

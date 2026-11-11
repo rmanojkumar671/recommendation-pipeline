@@ -1,0 +1,240 @@
+{
+  "run_at_utc": "2026-11-10T13:35:28.731463+00:00",
+  "tables": {
+    "users": {
+      "input_rows": 953,
+      "valid_rows": 943,
+      "error_rows": 10,
+      "error_pct": 1.049,
+      "injected_bad_rows": 10,
+      "injected_bad_rows_caught": 10,
+      "clean_rows_wrongly_quarantined": 0
+    },
+    "items": {
+      "input_rows": 1682,
+      "valid_rows": 1682,
+      "error_rows": 0,
+      "error_pct": 0.0,
+      "injected_bad_rows": 0,
+      "injected_bad_rows_caught": 0,
+      "clean_rows_wrongly_quarantined": 0
+    },
+    "interactions": {
+      "input_rows": 100410,
+      "valid_rows": 100100,
+      "error_rows": 310,
+      "error_pct": 0.309,
+      "injected_bad_rows": 310,
+      "injected_bad_rows_caught": 310,
+      "clean_rows_wrongly_quarantined": 0
+    }
+  },
+  "rules": [
+    {
+      "table": "users",
+      "rule": "missing_required",
+      "severity": "error",
+      "description": "Any required field is null/blank",
+      "failed_rows": 0,
+      "failed_pct": 0.0
+    },
+    {
+      "table": "users",
+      "rule": "bad_type_user_id",
+      "severity": "error",
+      "description": "user_id must be an integer",
+      "failed_rows": 0,
+      "failed_pct": 0.0
+    },
+    {
+      "table": "users",
+      "rule": "duplicate_user_id",
+      "severity": "error",
+      "description": "user_id must be unique (later copies quarantined)",
+      "failed_rows": 4,
+      "failed_pct": 0.42
+    },
+    {
+      "table": "users",
+      "rule": "invalid_age",
+      "severity": "error",
+      "description": "age must be an integer in [5, 100]",
+      "failed_rows": 3,
+      "failed_pct": 0.315
+    },
+    {
+      "table": "users",
+      "rule": "invalid_gender",
+      "severity": "error",
+      "description": "gender must be one of ['M', 'F']",
+      "failed_rows": 3,
+      "failed_pct": 0.315
+    },
+    {
+      "table": "users",
+      "rule": "unknown_occupation",
+      "severity": "error",
+      "description": "occupation must be in u.occupation",
+      "failed_rows": 0,
+      "failed_pct": 0.0
+    },
+    {
+      "table": "users",
+      "rule": "non_numeric_zip",
+      "severity": "warning",
+      "description": "zip_code is not a 5-digit US code (kept; standardised in preparation)",
+      "failed_rows": 18,
+      "failed_pct": 1.889
+    },
+    {
+      "table": "items",
+      "rule": "missing_required",
+      "severity": "error",
+      "description": "item_id and title are required",
+      "failed_rows": 0,
+      "failed_pct": 0.0
+    },
+    {
+      "table": "items",
+      "rule": "bad_type_item_id",
+      "severity": "error",
+      "description": "item_id must be an integer",
+      "failed_rows": 0,
+      "failed_pct": 0.0
+    },
+    {
+      "table": "items",
+      "rule": "duplicate_item_id",
+      "severity": "error",
+      "description": "item_id must be unique",
+      "failed_rows": 0,
+      "failed_pct": 0.0
+    },
+    {
+      "table": "items",
+      "rule": "invalid_genre_flag",
+      "severity": "error",
+      "description": "genre flags must be 0/1",
+      "failed_rows": 0,
+      "failed_pct": 0.0
+    },
+    {
+      "table": "items",
+      "rule": "missing_release_date",
+      "severity": "warning",
+      "description": "release_date missing/unparseable (imputed from title year)",
+      "failed_rows": 1,
+      "failed_pct": 0.059
+    },
+    {
+      "table": "items",
+      "rule": "missing_imdb_url",
+      "severity": "warning",
+      "description": "imdb_url missing (filled with 'unknown')",
+      "failed_rows": 3,
+      "failed_pct": 0.178
+    },
+    {
+      "table": "items",
+      "rule": "empty_video_release_date",
+      "severity": "warning",
+      "description": "video_release_date is null (column is 100% empty and dropped)",
+      "failed_rows": 1682,
+      "failed_pct": 100.0
+    },
+    {
+      "table": "items",
+      "rule": "no_genre",
+      "severity": "warning",
+      "description": "item has no genre flag set",
+      "failed_rows": 0,
+      "failed_pct": 0.0
+    },
+    {
+      "table": "interactions",
+      "rule": "missing_required",
+      "severity": "error",
+      "description": "user_id, item_id, rating, timestamp are required",
+      "failed_rows": 40,
+      "failed_pct": 0.04
+    },
+    {
+      "table": "interactions",
+      "rule": "bad_type_ids",
+      "severity": "error",
+      "description": "user_id/item_id must be integers",
+      "failed_rows": 0,
+      "failed_pct": 0.0
+    },
+    {
+      "table": "interactions",
+      "rule": "bad_type_rating",
+      "severity": "error",
+      "description": "rating must be numeric",
+      "failed_rows": 20,
+      "failed_pct": 0.02
+    },
+    {
+      "table": "interactions",
+      "rule": "invalid_rating",
+      "severity": "error",
+      "description": "rating must be an integer in [1, 5]",
+      "failed_rows": 40,
+      "failed_pct": 0.04
+    },
+    {
+      "table": "interactions",
+      "rule": "invalid_timestamp",
+      "severity": "error",
+      "description": "timestamp must be unix seconds between 1995-01-01 and now",
+      "failed_rows": 30,
+      "failed_pct": 0.03
+    },
+    {
+      "table": "interactions",
+      "rule": "exact_duplicate",
+      "severity": "error",
+      "description": "exact duplicate of an earlier row (first occurrence kept)",
+      "failed_rows": 150,
+      "failed_pct": 0.149
+    },
+    {
+      "table": "interactions",
+      "rule": "orphan_user",
+      "severity": "error",
+      "description": "user_id not found in validated users (referential integrity)",
+      "failed_rows": 15,
+      "failed_pct": 0.015
+    },
+    {
+      "table": "interactions",
+      "rule": "orphan_item",
+      "severity": "error",
+      "description": "item_id not found in validated items (referential integrity)",
+      "failed_rows": 15,
+      "failed_pct": 0.015
+    },
+    {
+      "table": "interactions",
+      "rule": "repeat_user_item",
+      "severity": "warning",
+      "description": "same user rated the same item more than once (latest kept in preparation)",
+      "failed_rows": 438,
+      "failed_pct": 0.436
+    }
+  ],
+  "contracts": {
+    "users": {
+      "status": "passed",
+      "failures": 0
+    },
+    "items": {
+      "status": "passed",
+      "failures": 0
+    },
+    "interactions": {
+      "status": "passed",
+      "failures": 0
+    }
+  }
+}

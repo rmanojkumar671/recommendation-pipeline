@@ -1,0 +1,11 @@
+user_id,age,gender,occupation,zip_code,failed_rules,validated_at_utc,_injected
+2000,999,F,educator,61401,invalid_age,2026-11-10T13:36:17.790230+00:00,invalid_age
+2001,-3,M,marketing,92037,invalid_age,2026-11-10T13:36:17.790230+00:00,invalid_age
+2002,150,M,educator,02140,invalid_age,2026-11-10T13:36:17.790230+00:00,invalid_age
+2003,21,male,salesman,31211,invalid_gender,2026-11-10T13:36:17.790230+00:00,invalid_gender
+2004,39,X,educator,61820,invalid_gender,2026-11-10T13:36:17.790230+00:00,invalid_gender
+2005,27,X,other,48103,invalid_gender,2026-11-10T13:36:17.790230+00:00,invalid_gender
+348,24,F,student,45660,duplicate_user_id,2026-11-10T13:36:17.790230+00:00,duplicate_user_id
+668,29,F,writer,10016,duplicate_user_id,2026-11-10T13:36:17.790230+00:00,duplicate_user_id
+750,28,M,administrator,32303,duplicate_user_id,2026-11-10T13:36:17.790230+00:00,duplicate_user_id
+400,33,F,administrator,78213,duplicate_user_id,2026-11-10T13:36:17.790230+00:00,duplicate_user_id

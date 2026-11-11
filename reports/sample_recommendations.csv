@@ -1,0 +1,76 @@
+user_id,model,rank,item_id,title
+1,Popularity (baseline),1,318,Schindler's List (1993)
+1,Popularity (baseline),2,483,Casablanca (1942)
+1,Popularity (baseline),3,313,Titanic (1997)
+1,Popularity (baseline),4,357,One Flew Over the Cuckoo's Nest (1975)
+1,Popularity (baseline),5,302,L.A. Confidential (1997)
+3,Popularity (baseline),1,50,Star Wars (1977)
+3,Popularity (baseline),2,100,Fargo (1996)
+3,Popularity (baseline),3,127,"Godfather, The (1972)"
+3,Popularity (baseline),4,174,Raiders of the Lost Ark (1981)
+3,Popularity (baseline),5,98,"Silence of the Lambs, The (1991)"
+4,Popularity (baseline),1,50,Star Wars (1977)
+4,Popularity (baseline),2,100,Fargo (1996)
+4,Popularity (baseline),3,127,"Godfather, The (1972)"
+4,Popularity (baseline),4,174,Raiders of the Lost Ark (1981)
+4,Popularity (baseline),5,98,"Silence of the Lambs, The (1991)"
+7,Popularity (baseline),1,50,Star Wars (1977)
+7,Popularity (baseline),2,100,Fargo (1996)
+7,Popularity (baseline),3,127,"Godfather, The (1972)"
+7,Popularity (baseline),4,174,Raiders of the Lost Ark (1981)
+7,Popularity (baseline),5,98,"Silence of the Lambs, The (1991)"
+11,Popularity (baseline),1,50,Star Wars (1977)
+11,Popularity (baseline),2,100,Fargo (1996)
+11,Popularity (baseline),3,127,"Godfather, The (1972)"
+11,Popularity (baseline),4,174,Raiders of the Lost Ark (1981)
+11,Popularity (baseline),5,98,"Silence of the Lambs, The (1991)"
+1,Item-kNN CF,1,423,E.T. the Extra-Terrestrial (1982)
+1,Item-kNN CF,2,568,Speed (1994)
+1,Item-kNN CF,3,385,True Lies (1994)
+1,Item-kNN CF,4,403,Batman (1989)
+1,Item-kNN CF,5,393,Mrs. Doubtfire (1993)
+3,Item-kNN CF,1,328,Conspiracy Theory (1997)
+3,Item-kNN CF,2,286,"English Patient, The (1996)"
+3,Item-kNN CF,3,313,Titanic (1997)
+3,Item-kNN CF,4,748,"Saint, The (1997)"
+3,Item-kNN CF,5,289,Evita (1996)
+4,Item-kNN CF,1,50,Star Wars (1977)
+4,Item-kNN CF,2,100,Fargo (1996)
+4,Item-kNN CF,3,127,"Godfather, The (1972)"
+4,Item-kNN CF,4,174,Raiders of the Lost Ark (1981)
+4,Item-kNN CF,5,98,"Silence of the Lambs, The (1991)"
+7,Item-kNN CF,1,50,Star Wars (1977)
+7,Item-kNN CF,2,100,Fargo (1996)
+7,Item-kNN CF,3,127,"Godfather, The (1972)"
+7,Item-kNN CF,4,174,Raiders of the Lost Ark (1981)
+7,Item-kNN CF,5,98,"Silence of the Lambs, The (1991)"
+11,Item-kNN CF,1,50,Star Wars (1977)
+11,Item-kNN CF,2,100,Fargo (1996)
+11,Item-kNN CF,3,127,"Godfather, The (1972)"
+11,Item-kNN CF,4,174,Raiders of the Lost Ark (1981)
+11,Item-kNN CF,5,98,"Silence of the Lambs, The (1991)"
+1,Matrix Factorization (SVD),1,357,One Flew Over the Cuckoo's Nest (1975)
+1,Matrix Factorization (SVD),2,511,Lawrence of Arabia (1962)
+1,Matrix Factorization (SVD),3,408,"Close Shave, A (1995)"
+1,Matrix Factorization (SVD),4,661,High Noon (1952)
+1,Matrix Factorization (SVD),5,302,L.A. Confidential (1997)
+3,Matrix Factorization (SVD),1,169,"Wrong Trousers, The (1993)"
+3,Matrix Factorization (SVD),2,408,"Close Shave, A (1995)"
+3,Matrix Factorization (SVD),3,187,"Godfather: Part II, The (1974)"
+3,Matrix Factorization (SVD),4,483,Casablanca (1942)
+3,Matrix Factorization (SVD),5,127,"Godfather, The (1972)"
+4,Matrix Factorization (SVD),1,50,Star Wars (1977)
+4,Matrix Factorization (SVD),2,100,Fargo (1996)
+4,Matrix Factorization (SVD),3,127,"Godfather, The (1972)"
+4,Matrix Factorization (SVD),4,174,Raiders of the Lost Ark (1981)
+4,Matrix Factorization (SVD),5,98,"Silence of the Lambs, The (1991)"
+7,Matrix Factorization (SVD),1,50,Star Wars (1977)
+7,Matrix Factorization (SVD),2,100,Fargo (1996)
+7,Matrix Factorization (SVD),3,127,"Godfather, The (1972)"
+7,Matrix Factorization (SVD),4,174,Raiders of the Lost Ark (1981)
+7,Matrix Factorization (SVD),5,98,"Silence of the Lambs, The (1991)"
+11,Matrix Factorization (SVD),1,50,Star Wars (1977)
+11,Matrix Factorization (SVD),2,100,Fargo (1996)
+11,Matrix Factorization (SVD),3,127,"Godfather, The (1972)"
+11,Matrix Factorization (SVD),4,174,Raiders of the Lost Ark (1981)
+11,Matrix Factorization (SVD),5,98,"Silence of the Lambs, The (1991)"

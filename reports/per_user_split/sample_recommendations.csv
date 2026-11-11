@@ -1,0 +1,76 @@
+user_id,model,rank,item_id,title
+1,Popularity (baseline),1,100,Fargo (1996)
+1,Popularity (baseline),2,318,Schindler's List (1993)
+1,Popularity (baseline),3,483,Casablanca (1942)
+1,Popularity (baseline),4,313,Titanic (1997)
+1,Popularity (baseline),5,258,Contact (1997)
+2,Popularity (baseline),1,174,Raiders of the Lost Ark (1981)
+2,Popularity (baseline),2,98,"Silence of the Lambs, The (1991)"
+2,Popularity (baseline),3,181,Return of the Jedi (1983)
+2,Popularity (baseline),4,318,Schindler's List (1993)
+2,Popularity (baseline),5,64,"Shawshank Redemption, The (1994)"
+3,Popularity (baseline),1,50,Star Wars (1977)
+3,Popularity (baseline),2,100,Fargo (1996)
+3,Popularity (baseline),3,174,Raiders of the Lost Ark (1981)
+3,Popularity (baseline),4,127,"Godfather, The (1972)"
+3,Popularity (baseline),5,98,"Silence of the Lambs, The (1991)"
+4,Popularity (baseline),1,100,Fargo (1996)
+4,Popularity (baseline),2,174,Raiders of the Lost Ark (1981)
+4,Popularity (baseline),3,127,"Godfather, The (1972)"
+4,Popularity (baseline),4,98,"Silence of the Lambs, The (1991)"
+4,Popularity (baseline),5,181,Return of the Jedi (1983)
+5,Popularity (baseline),1,127,"Godfather, The (1972)"
+5,Popularity (baseline),2,318,Schindler's List (1993)
+5,Popularity (baseline),3,64,"Shawshank Redemption, The (1994)"
+5,Popularity (baseline),4,12,"Usual Suspects, The (1995)"
+5,Popularity (baseline),5,483,Casablanca (1942)
+1,Item-kNN CF,1,423,E.T. the Extra-Terrestrial (1982)
+1,Item-kNN CF,2,228,Star Trek: The Wrath of Khan (1982)
+1,Item-kNN CF,3,568,Speed (1994)
+1,Item-kNN CF,4,385,True Lies (1994)
+1,Item-kNN CF,5,357,One Flew Over the Cuckoo's Nest (1975)
+2,Item-kNN CF,1,181,Return of the Jedi (1983)
+2,Item-kNN CF,2,7,Twelve Monkeys (1995)
+2,Item-kNN CF,3,121,Independence Day (ID4) (1996)
+2,Item-kNN CF,4,117,"Rock, The (1996)"
+2,Item-kNN CF,5,405,Mission: Impossible (1996)
+3,Item-kNN CF,1,328,Conspiracy Theory (1997)
+3,Item-kNN CF,2,313,Titanic (1997)
+3,Item-kNN CF,3,286,"English Patient, The (1996)"
+3,Item-kNN CF,4,301,In & Out (1997)
+3,Item-kNN CF,5,331,"Edge, The (1997)"
+4,Item-kNN CF,1,333,"Game, The (1997)"
+4,Item-kNN CF,2,181,Return of the Jedi (1983)
+4,Item-kNN CF,3,302,L.A. Confidential (1997)
+4,Item-kNN CF,4,326,G.I. Jane (1997)
+4,Item-kNN CF,5,294,Liar Liar (1997)
+5,Item-kNN CF,1,195,"Terminator, The (1984)"
+5,Item-kNN CF,2,69,Forrest Gump (1994)
+5,Item-kNN CF,3,202,Groundhog Day (1993)
+5,Item-kNN CF,4,82,Jurassic Park (1993)
+5,Item-kNN CF,5,56,Pulp Fiction (1994)
+1,Matrix Factorization (SVD),1,100,Fargo (1996)
+1,Matrix Factorization (SVD),2,357,One Flew Over the Cuckoo's Nest (1975)
+1,Matrix Factorization (SVD),3,169,"Wrong Trousers, The (1993)"
+1,Matrix Factorization (SVD),4,511,Lawrence of Arabia (1962)
+1,Matrix Factorization (SVD),5,408,"Close Shave, A (1995)"
+2,Matrix Factorization (SVD),1,408,"Close Shave, A (1995)"
+2,Matrix Factorization (SVD),2,1449,Pather Panchali (1955)
+2,Matrix Factorization (SVD),3,603,Rear Window (1954)
+2,Matrix Factorization (SVD),4,511,Lawrence of Arabia (1962)
+2,Matrix Factorization (SVD),5,169,"Wrong Trousers, The (1993)"
+3,Matrix Factorization (SVD),1,1449,Pather Panchali (1955)
+3,Matrix Factorization (SVD),2,169,"Wrong Trousers, The (1993)"
+3,Matrix Factorization (SVD),3,408,"Close Shave, A (1995)"
+3,Matrix Factorization (SVD),4,285,Secrets & Lies (1996)
+3,Matrix Factorization (SVD),5,187,"Godfather: Part II, The (1974)"
+4,Matrix Factorization (SVD),1,408,"Close Shave, A (1995)"
+4,Matrix Factorization (SVD),2,1449,Pather Panchali (1955)
+4,Matrix Factorization (SVD),3,169,"Wrong Trousers, The (1993)"
+4,Matrix Factorization (SVD),4,657,"Manchurian Candidate, The (1962)"
+4,Matrix Factorization (SVD),5,302,L.A. Confidential (1997)
+5,Matrix Factorization (SVD),1,179,"Clockwork Orange, A (1971)"
+5,Matrix Factorization (SVD),2,114,Wallace & Gromit: The Best of Aardman Animation (1996)
+5,Matrix Factorization (SVD),3,12,"Usual Suspects, The (1995)"
+5,Matrix Factorization (SVD),4,647,Ran (1985)
+5,Matrix Factorization (SVD),5,408,"Close Shave, A (1995)"

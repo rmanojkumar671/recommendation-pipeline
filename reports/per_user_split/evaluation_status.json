@@ -1,0 +1,8 @@
+{
+  "status": "ok",
+  "models": [
+    "popularity",
+    "item_knn",
+    "matrix_factorization"
+  ]
+}

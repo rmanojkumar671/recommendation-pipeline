@@ -1,0 +1,80 @@
+{
+  "started_at_utc": "2026-11-10T13:36:17.335626+00:00",
+  "config": "/home/claude/recommendation-pipeline/configs/config.yaml",
+  "tasks": [
+    {
+      "task": "ingest_data",
+      "upstream": [],
+      "status": "success",
+      "seconds": 0.28
+    },
+    {
+      "task": "validate_data",
+      "upstream": [
+        "ingest_data"
+      ],
+      "status": "success",
+      "seconds": 5.66
+    },
+    {
+      "task": "prepare_data",
+      "upstream": [
+        "validate_data"
+      ],
+      "status": "success",
+      "seconds": 0.17
+    },
+    {
+      "task": "transform_data",
+      "upstream": [
+        "prepare_data"
+      ],
+      "status": "success",
+      "seconds": 0.43
+    },
+    {
+      "task": "build_features",
+      "upstream": [
+        "transform_data"
+      ],
+      "status": "success",
+      "seconds": 0.55
+    },
+    {
+      "task": "train_popularity",
+      "upstream": [
+        "build_features"
+      ],
+      "status": "success",
+      "seconds": 0.95
+    },
+    {
+      "task": "train_item_knn",
+      "upstream": [
+        "build_features"
+      ],
+      "status": "success",
+      "seconds": 17.73
+    },
+    {
+      "task": "train_matrix_factorization",
+      "upstream": [
+        "build_features"
+      ],
+      "status": "success",
+      "seconds": 21.13
+    },
+    {
+      "task": "evaluate_models",
+      "upstream": [
+        "train_popularity",
+        "train_item_knn",
+        "train_matrix_factorization"
+      ],
+      "status": "success",
+      "seconds": 1.36
+    }
+  ],
+  "finished_at_utc": "2026-11-10T13:37:05.604082+00:00",
+  "status": "success"
+}

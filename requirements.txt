@@ -1,0 +1,13 @@
+# Core pipeline (Python 3.10 - 3.13). Tested with the versions in brackets.
+pandas>=2.2            # [3.1.1]
+numpy>=1.26            # [2.5.4]
+scipy>=1.11            # [1.18.1]
+pyarrow>=14            # [26.0.1]  parquet storage
+pyyaml>=6              # [6.0.3]
+pandera>=0.20          # [0.36.0]  schema contracts
+mlflow>=2.12           # [3.18.0]  experiment tracking
+matplotlib>=3.8        # [3.11.2]  figures
+pytest>=8              # [9.1.1]   unit tests
+
+# Orchestration: Apache Airflow is installed separately (see README / requirements-airflow.txt)
+# because Airflow must be installed with its official constraints file.

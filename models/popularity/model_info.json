@@ -1,0 +1,12 @@
+{
+  "model": "popularity",
+  "mlflow_run_id": "a2ab97bf9a964f288cdb54cfa1e2ba45",
+  "params": {
+    "score": "bayesian_avg_x_log_count",
+    "min_ratings": 10
+  },
+  "train_rmse": 1.0184546871495657,
+  "fit_seconds": 0.0,
+  "model_sha256": "75ae2fc9e34b840404c282150fce7cafcbceb73a3a80c945bbf117faec3b72f9",
+  "feature_set_version": "19a6bee73fbf"
+}

@@ -1,0 +1,14 @@
+{
+  "model": "item_knn",
+  "mlflow_run_id": "faa0e86661b94195ade1708094e59846",
+  "params": {
+    "n_neighbors": 50,
+    "shrinkage": 10,
+    "min_rating": 1,
+    "min_ratings": 10
+  },
+  "train_rmse": 0.791103545137846,
+  "fit_seconds": 0.3,
+  "model_sha256": "2f35193a29b4a5c0c9add40d30ae2c9c514aad956456eff00fe5aaf698d9690d",
+  "feature_set_version": "19a6bee73fbf"
+}

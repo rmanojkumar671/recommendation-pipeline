@@ -1,0 +1,17 @@
+{
+  "model": "matrix_factorization",
+  "mlflow_run_id": "23de391c0a9c44f99badd8e1cb32864f",
+  "params": {
+    "n_factors": 40,
+    "n_epochs": 30,
+    "learning_rate": 0.007,
+    "reg": 0.06,
+    "init_std": 0.1,
+    "seed": 42,
+    "min_ratings": 10
+  },
+  "train_rmse": 0.7173437390738412,
+  "fit_seconds": 18.17,
+  "model_sha256": "5c53b3d5b68d0b8f0dce218fe86c6aaaebbfc9bd46526e2896f4c6807046878d",
+  "feature_set_version": "19a6bee73fbf"
+}
